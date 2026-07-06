@@ -138,8 +138,13 @@
 # # Example17: Add Two Numbers Using map() and .split()
 # Input two numbers like: 10 20
 # num1, num2 = map(int, input("Enter two numbers separated by a space: ").split())
-
 # total = num1 + num2
+
+# Example18: Multiply Two Numbers Using map() and .split()
+# Input two numbers like: 8 5
+#num1, num2 = map(int, input("Enter two numbers separated by a space: ").split())
+#product = num1 * num2
+# print("The product is:", product)
 
 # print(f"The sum of {num1} and {num2} is {total}.")
 # Explanation of the Code:
