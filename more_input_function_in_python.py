@@ -231,7 +231,10 @@ area = length * width
 
 print("The total area of the rectangle is:", area)
 
-
+ solution 2
+length, width = map(int, input("Enter the length and width of the rectangle separated by a space: ").split())
+area = length * width
+print("The total area of the rectangle is:", area)
 
 #Output: The total area of the rectangle is: ***
 
