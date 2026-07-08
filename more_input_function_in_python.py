@@ -178,6 +178,11 @@ message = "Hello " + name + "! Your favorite color is " + favorite_color + "."
 
 print(message)
 
+solution 2
+name, favorite_color = input("Enter your name and favorite color separated by a space: ").split()
+
+message = f"Hello {name}! Your favorite color is {favorite_color}."
+print(message)
 
 # # Python
 
