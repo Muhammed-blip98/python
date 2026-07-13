@@ -19,3 +19,38 @@
 # A.Print the total sum of the sale prices.
 
 # B.Sort the sale_prices list in descending order (highest to lowest) and print it.
+
+# 1. Creation & Appending
+inventory = []
+
+inventory.append("apples")
+inventory.append("bananas")
+inventory.append("carrots")
+
+print("Inventory after appending:", inventory)
+
+# 2. Inserting
+inventory.insert(0, "milk")
+
+print("Inventory after inserting milk:", inventory)
+
+# 3. Extending
+inventory.extend(["eggs", "bread", "cheese"])
+
+print("Inventory after extending:", inventory)
+
+# 4. Slicing
+aisle_one = inventory[:3]
+
+print("Aisle One:", aisle_one)
+
+# 5. Removal & Popping
+inventory.remove("carrots")
+
+audited_item = inventory.pop()
+
+print("Inventory after removing carrots:", inventory)
+print("Audited Item:", audited_item)
+
+# 6. List Comprehension
+prices = [10, 15, 23, 42, 55]
