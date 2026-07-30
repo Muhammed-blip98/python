@@ -1,0 +1,48 @@
+# # ExCERCISE 2: Playlist Manager & Data Cleanup
+
+# 1. Negative Indexing & Length: Given the starting playlist: playlist = ["Song A", "Song B", "Song C", "Song D", "Song E"].
+
+# A. Use negative indexing to print the second-to-last item ("Song D").
+
+# B. Print the total number of songs currently in the playlist using a list function.
+
+# 2. Advanced Slicing: Using the same playlist, use a single slicing command with a negative or positive step to create a new list called alternate_playlist that grabs every other song starting from the first one (["Song A", "Song C", "Song E"]).
+
+# 3. In-Place Modifying vs. Functions: You have a list of user ratings: ratings = [4.5, 3.2, 5.0, 2.1, 4.8].
+
+# A. Create a new variable new_sorted that holds a sorted copy of the ratings from lowest to highest, without changing the original ratings list.
+
+# B. Now, permanently change the original ratings list so that its elements are in reverse order using a list method.
+
+# 4. Data Aggregation: Write code to find the mathematical average (mean) of the ratings list using the sum() and len() functions.
+
+# 5. Advanced List Comprehension: You are handed a list of mixed tracking data: raw_data = [120, "ERROR", 180, "SKIP", 240, 90, "ERROR"].
+
+# Use a single list comprehension to filter out all string values ("ERROR", "SKIP") and multiply all the remaining track durations (integers) by 2 to convert them from seconds to a new metric.
+
+
+SOLUTION:
+# 1
+playlist = ["Song A", "Song B", "Song C", "Song D", "Song E"]
+print(playlist[-2])   # Song D
+print(len(playlist))  # 5
+
+# 2
+alternate_playlist = playlist[::2]
+
+# 3
+ratings = [4.5, 3.2, 5.0, 2.1, 4.8]
+new_sorted = sorted(ratings)
+ratings.reverse()
+
+# 4
+average = sum(ratings) / len(ratings)
+
+# 5
+raw_data = [120, "ERROR", 180, "SKIP", 240, 90, "ERROR"]
+processed_data = [x * 2 for x in raw_data if isinstance(x, int)]
+
+
+
+
+
