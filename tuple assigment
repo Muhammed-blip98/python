@@ -1,0 +1,11 @@
+employees = [
+    ("Alice", "HR", 65000),
+    ("Bob", "Engineering", 95000),
+    ("Charlie", "Marketing", 72000),
+    ("Diana", "Engineering", 88000)
+]
+
+# Arrange employees by salary in descending order
+employees.sort(key=lambda employee: employee[2], reverse=True)
+
+print(employees)
