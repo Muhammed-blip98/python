@@ -1,0 +1,78 @@
+#name = input("Enter your name: ")
+#print("You are welcome, " , name ,"!")
+#print(f"You are welcome, {name} !")
+
+
+
+
+
+#num1 = (input("Enter first number: "))
+#num2 = (input("Enter second number: "))
+#print("Sum:", num1 + num2)
+
+
+
+#num1 = int(input("Enter first number: "))
+#num2 = int(input("Enter second number: "))
+#print("Sum:", num1 + num2)
+
+#name, age = input("Enter your name and age separated by a space: ").split()
+#age = int(age)
+#print("Name:", name)
+
+
+
+
+#age = input("Enter your age")
+
+# print("My age is:", age + "years")
+
+
+#num1, num2 = map(int, input("Enter two numbers separated by a space: ").split())
+#product = num1 * num2
+#print("The product is:", product)
+
+#name, favorite_color = input("Enter your name and favorite color separated by a space: ").split()
+
+#message = f"Hello {name}! Your favorite color is {favorite_color}."
+#print(message)
+# length, width = map(int, input("Enter the length and width of the rectangle separated by a space: ").split())
+
+# area = length * width
+
+# print("The total area of the rectangle is:", area)
+
+# nested_record = ("TechCorp", [2024, 2025, 2026], ("HR", "Engineering", "Sales"))
+# second_item_in_nested_record = nested_record [2][1]  
+# print (second_item_in_nested_record)
+
+
+
+# records = [("Alice", 88), ("Bob", 95), ("Charlie", 78), ("Diana", 92)]
+# sorted_records = sorted(records, key=lambda x:x[1], reverse = True)
+# print (sorted_records)
+
+employees = [
+    ("Alice", "HR", 65000),
+    ("Bob", "Engineering", 95000),
+    ("Charlie", "Marketing", 72000),
+    ("Diana", "Engineering", 88000)]
+
+# Arrange employees by salary in descending order
+# employees.sort(reverse=True)
+
+# print(employees)
+
+
+# all_students = {"Alice","Bob","Charlie","David","Eve"}
+# submitted = {"Bob", "David"}
+# not_submitted = all_students-submitted
+# print(not_submitted)
+# all_students.add('frank')
+# print(all_students)
+
+words = ["apple", "banana", "apple", "cherry", "banana", "date"]
+unique_words = set(words)
+print(unique_words)
+
+print("is 'cherry' present", "cherry" in unique_words)
