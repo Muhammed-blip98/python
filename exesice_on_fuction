@@ -1,0 +1,20 @@
+# Write a function that takes an integer and returns True if it is even, and False otherwise.
+# Write a function that receives a tuple (length, width) and returns both the area and perimeter as a tuple.
+# Write a function with a default parameter that returns True if a student's score meets or exceeds the passing grade.
+# Write a function that takes a list of integers and returns a new list containing only the even numbers.
+
+# solution
+# # 1. Check if an integer is even
+# def is_even(number):
+#     return number % 2 == 0
+
+# # 2. Return area and perimeter of a rectangle
+# def rectangle_info(dimensions):
+#     length, width = dimensions
+#     area = length * width
+#     perimeter = 2 * (length + width)
+#     return (area, perimeter)
+
+# # 3. Check if a student's score meets the passing grade
+# def is_passing(score, passing_grade=50):
+#     return score >= passing_grade
