@@ -1,0 +1,55 @@
+# Write a function that takes an integer and returns True if it is even, and False otherwise.
+# Write a function that receives a tuple (length, width) and returns both the area and perimeter as a tuple.
+# Write a function with a default parameter that returns True if a student's score meets or exceeds the passing grade.
+# Write a function that takes a list of integers and returns a new list containing only the even numbers.
+
+# solution
+# # 1. Check if an integer is even
+# def is_even(number):
+#     return number % 2 == 0
+
+# # 2. Return area and perimeter of a rectangle
+# def rectangle_info(dimensions):
+#     length, width = dimensions
+#     area = length * width
+#     perimeter = 2 * (length + width)
+#     return (area, perimeter)
+
+# # 3. Check if a student's score meets the passing grade
+# def is_passing(score, passing_grade=50):
+#     return score >= passing_grade
+
+# result = 2.4 + 3.3
+# result = round(result)
+# print(result)
+
+# def say_hello(name):
+#  print("Hello "  + name + " welcome to Python!")
+
+# say_hello('Mariam')
+
+# def is_even(number):
+#   return number % 2 == 0
+# print(is_even(7))
+
+# def rectangle_info(dimensions):
+#      length, width = dimensions
+#      area = length * width
+#      perimeter = 2 * (length + width)
+#      return (area, perimeter)
+# print(rectangle_info((5,10)))
+
+age = [5, 10, 16, 12, 17, 4, 19, 13, 20]
+# using list comprehension generate a new list of teenagers (ages between 13 and 19 inclusive) from the given list.
+# formula for list comprehension is x for x in variable if condition
+# tenage=x for x in age if 13 <= x <= 19
+tenage=[m for m in age if m >= 13 and m <= 19]
+tenage_2=[m * 2 for m in age if m >= 13 and m <= 19]
+print(tenage)
+print(tenage_2)
+
+#  Write a function that takes a list of integers and returns a new list containing only the even numbers.
+def even_numbers(numbers):
+   return[num for num in numbers if num % 2 ==0]
+print(even_numbers([52, 45, 86, 34, 94, 4, 12, 55]))
+ 
